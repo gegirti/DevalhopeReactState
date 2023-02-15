@@ -1,5 +1,6 @@
 import React from "react";
 import { Counter } from "./Counter";
+import { CounterDisplayExtract } from "./CounterDisplayExtract";
 import { CounterModified } from "./CounterModified";
 
 export class App extends React.Component {
@@ -13,7 +14,10 @@ export class App extends React.Component {
           State 03:{" "}
           <CounterModified initialValue={10} incrementBy={2} timeout={2000} />
         </div>
-        <div>Exercise 4:</div>
+        <div>
+          State 04:
+          <CounterDisplayExtract />
+        </div>
       </div>
     );
   }
